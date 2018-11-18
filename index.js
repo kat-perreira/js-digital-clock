@@ -2,10 +2,10 @@
 let d,h,m,s,animate;
 
 function init(){
-  d=new Date();
-  h=d.getHours();
-  m=d.getMinutes();
-  s=d.getSeconds();
+  d = new Date();
+  h = d.getHours();
+  m = d.getMinutes();
+  s = d.getSeconds();
   clock();
 }
 
@@ -29,7 +29,7 @@ function clock(){
     $('sec',s);
     $('min',m);
     $('hr',h);
-    animate=setTimeout(clock,1000);
+    animate = setTimeout(clock,1000);
   }
 
   function $(id,val){
